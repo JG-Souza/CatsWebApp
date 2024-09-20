@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ raca['nome'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>{{ raca['nome'] }}</h1>
+        </div>
+        <div class="content">
+            <div class="breed-details">
+                <p><strong>Descrição:</strong> {{ raca['descricao'] }}</p>
+                <p><strong>Origem:</strong> {{ raca['origem'] }}</p>
+                <p><strong>Tamanho:</strong> {{ raca['tamanho'] }}</p>
+                <p><strong>Vida Média:</strong> {{ raca['vida_media'] }}</p>
+                <p><strong>Temperamento:</strong> {{ raca['temperamento'] }}</p>
+                <p><strong>Cuidados Especiais:</strong> {{ raca['cuidados_especiais'] }}</p>
+                <p><strong>Problemas de Saúde:</strong> {{ raca['problemas_saude'] }}</p>
+                <p><strong>Compatibilidade:</strong> {{ raca['compatibilidade'] }}</p>
+                <p><strong>Nível de Atividade:</strong> {{ raca['nivel_atividade'] }}</p>
+                <p><strong>Estimulo Mental:</strong> {{ raca['estimulo_mental'] }}</p>
+                <p><strong>Sociabilidade:</strong> {{ raca['sociabilidade'] }}</p>
+                <p><strong>Histórico:</strong> {{ raca['historico'] }}</p>
+                <p><strong>Preferências Alimentares:</strong> {{ raca['preferencias_alimentares'] }}</p>
+            </div>
+            <a class="back-link" href="{{ url_for('index') }}">Voltar à Lista de Raças</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

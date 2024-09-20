@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raças de Gatos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Raças de Gatos</h1>
+        </div>
+        <div class="content">
+            <ul class="breed-list">
+                {% for raca in racas %}
+                    <li class="breed-item">
+                        <a href="{{ url_for('raca_info', nome_raca=raca) }}">{{ raca }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
